@@ -5,11 +5,13 @@
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
   <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
   <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" {% if site.lang %}hreflang="{{ site.lang }}" {% endif %}/>
+  <language>en-us</language>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ '/' | absolute_url | xml_escape }}</id>
   <itunes:category text="Sports & Recreation">
     <itunes:category text="TV & Film" />
   </itunes:category>
+  <itunes:explicit>no</itunes:explicit>
 
   <title type="html">{{ site.title | smartify | xml_escape }}</title>
 
