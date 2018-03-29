@@ -22,7 +22,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>http://jekyllrb.com</generator>
-    <itunes:summary>{{ site.podcast_summary }}</itunes:summary>
+    <itunes:summary>{{ site.description }}</itunes:summary>
     <itunes:author>{{ site.podcast_author }}</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}" />
