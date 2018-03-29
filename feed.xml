@@ -37,9 +37,8 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 <!-- <url>{{ site.url }}{{ site.podcast_album_art }}</url> -->
 <link>{{ site.url }}</link>
 </image>
-<itunes:category text="{{ site.podcast_category }}">
-<itunes:category text="{{ site.podcast_subcategory_one }}" />
-<itunes:category text="{{ site.podcast_subcategory_two }}" />
+<itunes:category text="Sports & Recreation">
+    <itunes:category text="TV & Film" />
 </itunes:category>
 {% for ep in site.posts %}
   <item>
@@ -67,7 +66,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     <itunes:summary><![CDATA[{{ ep.content | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
     <itunes:author>{{ site.podcast_author }}</itunes:author>
     <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}" />
-    <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
+    <itunes:explicit>no</itunes:explicit>
     <itunes:duration>{{ ep.podcast_duration }}</itunes:duration>
   </item>
 {% endfor %}
