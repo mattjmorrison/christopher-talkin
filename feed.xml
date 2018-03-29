@@ -53,10 +53,6 @@
         {% endif %}
       </author>
 
-      {% for tag in post.tags %}
-        <category term="{{ tag | xml_escape }}" />
-      {% endfor %}
-
       {% if post.excerpt and post.excerpt != empty %}
         <summary type="html">{{ post.excerpt | strip_html | normalize_whitespace | xml_escape }}</summary>
       {% endif %}
