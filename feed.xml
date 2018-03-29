@@ -57,9 +57,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     <category><![CDATA[{{ category | cdata_escape }}]]></category>
 {% endfor %}
     <guid isPermaLink="true">{{ site.url }}/episodes/{{ ep.episode }}</guid>
-    <description>
-        <![CDATA[{{ ep.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
-    </description>
+    <description>{{ ep.description }}</description>
     <content:encoded>
         <![CDATA[{{ ep.content | expand_urls: site.url | cdata_escape }}]]>
     </content:encoded>
