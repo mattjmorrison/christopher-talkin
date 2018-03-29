@@ -58,9 +58,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     {% endfor %}
         <guid isPermaLink="true">http://christophertalkin.com/episodes/{{ ep.episode }}</guid>
         <description>{{ ep.description }}</description>
-        <content:encoded>
-            <![CDATA[{{ ep.content | expand_urls: site.url | cdata_escape }}]]>
-        </content:encoded>
+        <content:encoded>{{ ep.description }}</content:encoded>
 
         <enclosure url="http://christophertalkin.com/episodes/{{ ep.episode }}" length="{{ ep.podcast_length }}" type="audio/mpeg" />
         <itunes:subtitle><![CDATA[{{ ep.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]></itunes:subtitle>
