@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
-name: "The Christopher Talkin' Podcast"
+title: "The Christopher Talkin' Podcast"
 description: "Each episode celebrates the brilliant performances of the legendary actor Christopher Walken."
 url: www.christophertalkin.com
 author: Matthew J. Morrison
