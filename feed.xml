@@ -32,14 +32,17 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     </itunes:owner>
     <managingEditor>mattjmorrison@mattjmorrison.com (Matthew J. Morrison)</managingEditor>
     <itunes:subtitle></itunes:subtitle>
-<image>
-<title>site.title</title>
-<!-- <url>{{ site.url }}{{ site.podcast_album_art }}</url> -->
-<link>{{ site.url }}</link>
-</image>
-<itunes:category text="Sports & Recreation">
-    <itunes:category text="TV & Film" />
-</itunes:category>
+    <!--
+    <image>
+        <title>site.title</title>
+        <url>{{ site.url }}{{ site.podcast_album_art }}</url>
+        <link>{{ site.url }}</link>
+    </image>
+    -->
+    <itunes:category text="Sports & Recreation">
+        <itunes:category text="TV & Film" />
+    </itunes:category>
+
 {% for ep in site.posts %}
   <item>
     <title>{{ ep.title }}</title>
