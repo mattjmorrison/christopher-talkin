@@ -14,8 +14,8 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 
 <channel>
     <title>{{ site.title }}</title>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    <link>{{ site.url }}</link>
+    <atom:link href="http://christophertalkin.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://christophertalkin.com</link>
     <description>{{ site.description }}</description>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     <language>en-US</language>
@@ -33,12 +33,12 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     <managingEditor>mattjmorrison@mattjmorrison.com (Matthew J. Morrison)</managingEditor>
     <itunes:subtitle></itunes:subtitle>
     <image>
-        <title>site.title</title>
+        <title>{{ site.title }}</title>
         <url>http://christophertalkin.com/img/walken.png</url>
         <link>http://christophertalkin.com</link>
     </image>
-    <itunes:category text="Sports & Recreation">
-        <itunes:category text="TV & Film" />
+    <itunes:category text="Sports &amp; Recreation">
+        <itunes:category text="TV &amp; Film" />
     </itunes:category>
 
     {% for ep in site.posts %}
