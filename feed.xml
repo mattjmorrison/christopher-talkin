@@ -23,7 +23,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>http://jekyllrb.com</generator>
     <itunes:summary>{{ site.description }}</itunes:summary>
-    <itunes:author>{{ site.podcast_author }}</itunes:author>
+    <itunes:author>Matthew J. Morrison</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:image href="http://christophertalkin.com/img/walken.png" />
     <itunes:owner>
